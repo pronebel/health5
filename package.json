@@ -1,0 +1,17 @@
+{
+  "name": "health5",
+  "version": "1.0.0",
+  "description": "health5: An Ionic project",
+  "dependencies": {
+    "gulp-concat": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-rename": "latest"
+  },
+  "devDependencies": {
+    "bower": "latest",
+    "gulp": "latest",
+    "gulp-sass": "latest",
+    "gulp-util": "latest",
+    "shelljs": "latest"
+  }
+}
