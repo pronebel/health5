@@ -1,4 +1,37 @@
-Starter.config(function($stateProvider, $urlRouterProvider) {
+Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+
+
+
+
+
+
+
+    var configProperties = {
+        views: {
+            maxCache: 5,
+            forwardCache: true,
+            transition: 'android'
+        },
+
+        backButton: {
+            icon: 'ion-chevron-left',
+            text: 'Go Back',
+            previousTitleText: false
+        },
+
+        tabs: {
+            style: 'striped',
+            position: 'bottom'
+        },
+        templates: {
+            // maxPrefetch: 0
+        }
+    };
+    $ionicConfigProvider.setPlatformConfig('android', configProperties);
+
+
+
+
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router

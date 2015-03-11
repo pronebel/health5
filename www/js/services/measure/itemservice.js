@@ -1,4 +1,4 @@
-Starter_Service.factory('pushUp',['orientationTrackingService','vibrationNotificationService','countingService',function(orientationTrackingService,vibrationNotificationService,countingService){
+Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotificationService','countingService',function(orientationTrackingService,vibrationNotificationService,countingService){
     var targets = ['y<-50','y>-10'];
     var trackIds = [];
     var counterTrackIds = {};

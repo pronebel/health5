@@ -5,7 +5,8 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var Starter = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova']);//,'ngMaterial'
+var Starter = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova']);//
+
 
 Starter.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {

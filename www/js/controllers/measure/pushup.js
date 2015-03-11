@@ -1,19 +1,19 @@
-Starter_Controller.controller("PushCtrl",['$scope','$location','$rootScope',function($scope, $location,$rootScope){
+Starter_Controller.controller("PushCtrl",['$scope','$location','$rootScope','PushUp',function($scope, $location,$rootScope,pushup){
     console.log("INTRO PAGE START");
 
     //ticketService.addTrackingItem();
     $scope.count=2;
     $scope.goToTest = function() {
-     /*   var trackId = pushUp.add();
-        pushUp.setChangedCallback(trackId, function(args){
+        var trackId = pushup.add();
+        pushup.setChangedCallback(trackId, function(args){
             $scope.count=args.current;
         });
-        pushUp.setFinishedCallback(trackId, function(args) {
-            alert("lajdlksdf");
+        pushup.setFinishedCallback(trackId, function(args) {
+            console.log("lajdlksdf");
             $scope.count = "DONE";
-            pushUp.del(trackId);
+            pushup.del(trackId);
 
-        });*/
+        });
     };
 
 }]);
