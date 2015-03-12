@@ -13,5 +13,6 @@
     "gulp-sass": "latest",
     "gulp-util": "latest",
     "shelljs": "latest"
-  }
+  },
+  "cordovaPlugins": []
 }

@@ -1,19 +1,35 @@
-Starter_Controller.controller("PushCtrl",['$scope','$location','$rootScope','PushUp',function($scope, $location,$rootScope,pushup){
-    console.log("INTRO PAGE START");
+Starter_Controller.controller("PushCtrl",['$scope','$location','$rootScope','PushUp','$cordovaNativeAudio',
+    function($scope, $location,$rootScope,pushup,$cordovaNativeAudio){
+
+
+
+    $cordovaNativeAudio
+        .preloadSimple('getOne', 'audio/di.mp3')
+        .then(function (msg) {
+            console.log(msg);
+        }, function (error) {
+            alert(error);
+        });
 
     //ticketService.addTrackingItem();
-    $scope.count=2;
+    $scope.count=0;
     $scope.goToTest = function() {
-        var trackId = pushup.add();
-        pushup.setChangedCallback(trackId, function(args){
-            $scope.count=args.current;
-        });
-        pushup.setFinishedCallback(trackId, function(args) {
-            console.log("lajdlksdf");
-            $scope.count = "DONE";
-            pushup.del(trackId);
+        $cordovaNativeAudio.play('getOne');
+         pushup.start({
+            target:5,
+            change:function(args){
+                $cordovaNativeAudio.play('getOne');
+                $scope.count=args.current;
+            },
+            finish: function(args) {
+                console.log("finished");
+                $scope.count = "~";
+                pushup.end(trackId);
 
+            }
         });
+
+
     };
 
 }]);
