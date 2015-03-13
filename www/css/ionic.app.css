@@ -7428,26 +7428,22 @@ a.button {
  * --------------------------------------------------
  * Platform specific tweaks
  */
-.platform-ios.platform-cordova:not(.fullscreen) {
-  /*  .tabs-top > .tabs,
-    .tabs.tabs-top {
-      top: $bar-height + $ios-statusbar-height;
-    }
-*/ }
-  .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-    height: 64px; }
-    .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
-      margin-top: 19px !important; }
-    .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
-      margin-top: 20px; }
-  .platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
-    top: 64px; }
-  .platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
-    top: 108px; }
-  .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-tabs-top {
-    top: 113px; }
-  .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
-    top: 157px; }
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+  height: 64px; }
+  .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
+    margin-top: 19px !important; }
+  .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+    margin-top: 20px; }
+.platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs, .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
+  top: 64px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-header, .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+  top: 64px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
+  top: 108px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-header.has-tabs-top {
+  top: 113px; }
+.platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
+  top: 157px; }
 .platform-ios.platform-cordova.status-bar-hide {
   margin-bottom: 20px; }
 
@@ -7594,3 +7590,27 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.index-pane {
+  padding: 6px 5px;
+  text-align: center; }
+  .index-pane .icon {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 60px;
+    color: #fff; }
+  .index-pane .train-menu {
+    padding: 10px; }
+  .index-pane .green {
+    margin: 0 1px;
+    background: #92CF68; }
+  .index-pane .blue {
+    margin: 0 1px;
+    background: #58B5E1; }
+  .index-pane .red {
+    margin: 0 1px;
+    background: #FA6567; }
+  .index-pane .orange {
+    margin: 0 1px;
+    background: #F7774A; }
