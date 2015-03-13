@@ -1,0 +1,37 @@
+
+.index-pane {
+  padding:6px 5px;
+  text-align: center;
+
+  .icon {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    font-size: 60px;
+
+    color: #fff;
+  }
+
+  .train-menu {
+    padding:10px;
+  }
+  .green {
+    margin:0 1px;
+
+    height:70px;background: #92CF68;
+  }
+
+  .blue {
+    margin:0 1px;
+    height:70px;background: #58B5E1;
+  }
+  .red {
+    margin:0 1px;
+    height:70px;background: #FA6567;
+  }
+  .orange {
+    margin:0 1px;
+    height:70px;background: #F7774A;
+  }
+
+}
