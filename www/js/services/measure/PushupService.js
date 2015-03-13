@@ -1,18 +1,10 @@
-Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotificationService','countingService',
-    function(orientationTrackingService,vibrationNotificationService,countingService){
+Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotificationService','countingService','SoundService',
+    function(orientationTrackingService,vibrationNotificationService,countingService,soundService){
 
 
         var trackIds = [];
         var counterTrackIds = {};
 
-        /**
-         * 删除一个pushup-tracking
-         * @param trackId
-         */
-        var del =  function(trackId) {
-            orientationTrackingService.del(trackId);
-            coungintService.del(counterTrackIds[trackId]);
-        }
 
 
         /**
@@ -23,6 +15,16 @@ Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotific
 
             target: 12,//单位组动作个数
             touchstone:['y<-50','y>-10']//姿态标准阀值
+        }
+
+
+        /**
+         * 删除一个pushup-tracking
+         * @param trackId
+         */
+        var del =  function(trackId) {
+            orientationTrackingService.del(trackId);
+            countingService.del(counterTrackIds[trackId]);
         }
 
 
@@ -57,9 +59,10 @@ Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotific
          */
         var add = function(options){
 
+            soundService.start();
             var opts  =angular.extend(defaults,options);
 
-            console.log(opts);
+
 
             var trackId = orientationTrackingService.add();
 
@@ -67,7 +70,8 @@ Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotific
 
             orientationTrackingService.setTask(trackId,opts.touchstone,true,
                 function(tracker){
-                   // vibrationNotificationService.vibrateNotice();
+
+                    soundService.tip();// vibrationNotificationService.vibrateNotice();
                 },
                 function(tracker){
                     countingService.accumulate(counterTrackId);

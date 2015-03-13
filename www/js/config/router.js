@@ -105,12 +105,20 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
                 }
             }
         })
+        /////////////////////////////////////////////////////////
         .state('pushup', {
             url: '/pushup',
-            templateUrl: 'templates/measure/pushup.html',
+            templateUrl: 'js/controllers/measure/pushup.html',
             controller: 'PushCtrl'
 
         })
+        .state('gym', {
+            url: '/gym',
+            templateUrl: 'js/controllers/measure/list.html',
+            controller: 'PushCtrl'
+
+        })
+
 
 
 

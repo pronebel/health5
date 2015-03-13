@@ -62,6 +62,37 @@ Starter_Service
     })
 
 
+
+    .factory('SoundService',function($cordovaNativeAudio){
+
+        /*$cordovaNativeAudio
+            .preloadSimple('getOne', 'audio/di.mp3')
+            .then(function (msg) {
+                console.log(msg);
+            }, function (error) {
+                alert(error);
+            });
+
+        $cordovaNativeAudio
+            .preloadSimple('go', 'audio/readygo.mp3')
+            .then(function (msg) {
+                console.log(msg);
+            }, function (error) {
+                alert(error);
+            });
+
+*/
+
+        return {
+            tip:function(){
+              //  $cordovaNativeAudio.play('getOne');
+            },
+            start:function(){
+              //  $cordovaNativeAudio.play('go');
+            }
+        }
+    })
+
 /**
  *
  */
@@ -83,7 +114,7 @@ Starter_Service
         }
     })
 
-    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, $cordovaDeviceOrientation) {
+    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService,SoundService, $cordovaDeviceOrientation) {
         var type = 'orientation';
         var currentTrackerCounter = 0;
         var isSensorStarted = false;

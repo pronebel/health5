@@ -1,0 +1,15 @@
+<ion-view view-title="俯卧撑">
+    <ion-content class="padding">
+        <h2  class="title" style="text-align: center;margin-bottom: 50px;">{{state.time}}</h2 >
+
+        <p style="font-size: 160px;line-height: 160px;text-align: center;">
+            {{state.count}}
+        </p>
+
+    </ion-content>
+    <div class="bar bar-footer bar-balanced">
+        <div class="title" ng-click="start()">{{getActionName()}}</div>
+    </div>
+
+</ion-view>
+
