@@ -148,7 +148,7 @@ Starter_Service
     .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, SoundService,countingService, $cordovaDeviceOrientation) {
         var type = 'orientation';
         var isSensorStarted = false;
-        var watchId = null;
+        var _watch = null;
 
         var current = {
             x: 0,
@@ -217,7 +217,11 @@ Starter_Service
 
             try {
                 clearWatch();
-                watchId = $cordovaDeviceOrientation.watchHeading({frequency: 200}).then(null, function (error) {
+
+                 _watch = $cordovaDeviceOrientation.watchHeading({ frequency: 500 });
+
+                window.aaaa= _watch;
+                _watch.then(null, function (error) {
 
                 }, function (result) {
 
@@ -234,8 +238,9 @@ Starter_Service
         };
 
         var clearWatch= function(){
-            if (watchId != null){
-                $cordovaDeviceOrientation.clearWatch(watchId);
+            if (_watch!=null){
+                console.log("clearWatch:"+_watch.watchID);
+                $cordovaDeviceOrientation.clearWatch(_watch.watchID);
             }
 
         }
@@ -243,7 +248,8 @@ Starter_Service
          * 鍋滄妫€娴?
          */
         var stopWatching = function () {
-            console.log("stopWatching");
+            console.log("stopWatching:");
+            console.log(_watch);
             clearWatch();
             isSensorStarted = false;
         }

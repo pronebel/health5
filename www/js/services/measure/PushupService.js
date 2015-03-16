@@ -25,6 +25,7 @@ Starter_Service.factory('PushUp',['orientationTrackingService','countingService'
          * @param trackId
          */
         var stop =  function(trackId) {
+            console.log("stoping...");
             orientationTrackingService.del(trackId);
             countingService.del(counterTrackIds[trackId]);
         }
