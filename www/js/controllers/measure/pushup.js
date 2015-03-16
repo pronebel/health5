@@ -21,6 +21,7 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
 
 
 
+        $scope.trakerId = null;
 
 
         $scope.state={
@@ -37,6 +38,8 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
             console.log("finished");
             $scope.state.sort = 0;
             $scope.stopTimer();
+            pushup.end($scope.trackId);
+
         }
 
         $scope.train=function(){
@@ -46,16 +49,16 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
                 change: function (args) {
                     $scope.state.count = args.current;
                 },
-                finish: function (args) {
-                    pushup.end(trackId);
+                finish: function () {
                     $scope.stop();
                 }
             });
+            $scope.trackId = trackId;
         }
         $scope.start = function () {
             if ($scope.state.sort == 1) {
                 $scope.state.sort = 0;
-                $scope.stopTimer();
+                $scope.stop();
             } else {
                 $scope.state.sort = 1;
                 $scope.train();
