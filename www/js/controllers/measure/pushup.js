@@ -38,7 +38,7 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
             console.log("finished");
             $scope.state.sort = 0;
             $scope.stopTimer();
-            pushup.end($scope.trackId);
+            pushup.stop($scope.trackId);
 
         }
 

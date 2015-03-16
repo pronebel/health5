@@ -24,7 +24,7 @@ Starter_Service.factory('PushUp',['orientationTrackingService','countingService'
          * 删除一个pushup-tracking
          * @param trackId
          */
-        var del =  function(trackId) {
+        var stop =  function(trackId) {
             orientationTrackingService.del(trackId);
             countingService.del(counterTrackIds[trackId]);
         }
@@ -53,7 +53,7 @@ Starter_Service.factory('PushUp',['orientationTrackingService','countingService'
         }
         return {
             start:add,
-            end:del
+            stop:stop
         }
     }]);
 
