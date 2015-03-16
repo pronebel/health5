@@ -46,7 +46,7 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
             $scope.startTimer();
             var trackId = pushup.start({
                 target: 5,
-                change: function (args) {
+                change: function (event,args) {
                     $scope.state.count = args.current;
                 },
                 finish: function () {

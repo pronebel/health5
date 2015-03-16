@@ -135,7 +135,7 @@ Starter_Service
         }
     })
 
-    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, SoundService, $cordovaDeviceOrientation) {
+    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, SoundService,countingService, $cordovaDeviceOrientation) {
         var type = 'orientation';
         var isSensorStarted = false;
         var watchId = null;
@@ -169,13 +169,13 @@ Starter_Service
                     var z = current.z;
                     var timestamp = current.timestamp;
                     //getTask
-                    var targets = tracker.targets;
+                    var touchstone = tracker.touchstone;
                     var stepCallback = tracker.stepCallback;
                     var taskCallback = tracker.taskCallback;
                     var step = tracker.step;
                     var done = true;
-                    for (var k = 0; k < targets.length; k++) {
-                        if (!eval(targets[step])) {
+                    for (var k = 0; k < touchstone.length; k++) {
+                        if (!eval(touchstone[step])) {
                             done = false;
                             break;
                         }
@@ -187,7 +187,7 @@ Starter_Service
                         tracker['timestamp'] = timestamp;
                         stepCallback(tracker);
                         step++;
-                        if (step >= targets.length) {
+                        if (step >= touchstone.length) {
                             taskCallback(tracker);
                             step = 0;
 
@@ -229,8 +229,31 @@ Starter_Service
             isSensorStarted = false;
         }
 
+
+
+
+
+
+
+        var setTask = function (trackerId, touchstone, enabled,counterTrackId) {
+
+
+        }
+
+
+
+
         return {
-            add: function () {
+            /**
+             *
+             * @param counterTrackId
+             * @param options={
+             *
+             *
+             * }
+             * @returns {*|exports.guid|_ticketItem.guid|Compiler.guid|c.guid|d.guid}
+             */
+            create: function (counterTrackId,options) {
 
                 var tracker = abstractTrackingService.addTrackingItem({
                     type:type,
@@ -241,6 +264,25 @@ Starter_Service
                 if (isSensorStarted == false) {
                     startWatching();
                 }
+
+
+                var defaultTask = {
+                    touchstone:options.touchstone,
+                    step:0,
+                    enabled:true,
+                    stepCallback: function(tracker){
+
+                        SoundService.tip();// vibrationNotificationService.vibrateNotice();
+                    },
+                    taskCallback:function(tracker){
+                        countingService.accumulate(counterTrackId);
+                    }
+                }
+
+                angular.extend(tracker,defaultTask);
+
+
+
                 return tracker.guid;
             },
             del: function (trackerId) {
@@ -250,50 +292,74 @@ Starter_Service
                     stopWatching();
                 }
                 return true;
-            },
-            /*
-
-             */
-            setTask: function (trackerId, targets, enabled, stepCallback, taskCallback) {
-                var tracker = abstractTrackingService.getTrackingItem(trackerId);
-                tracker['targets'] = targets;
-                tracker['enabled'] = enabled;
-                tracker['step'] = 0;
-                tracker['stepCallback'] = stepCallback;
-                tracker['taskCallback'] = taskCallback;
             }
+
         }
     })
 
     .factory('countingService', function (ticketService) {
-        var targetTicket = null;
         var category = "counting";
         var type = "basic_counting";
+
+        /**
+         * 设置训练数目完成后的反馈
+         * @param trackId
+         * @param callback
+         */
+        var setFinishCallback= function (ticketId, callback) {
+            ticketService.onEvent(ticketId, EVT_COUNTING_FINISHED, callback);
+        }
+        /**
+         * 设置标准动作完成后的反馈
+         * @param trackId
+         * @param callback
+         */
+        var setChangedCallback= function (ticketId, callback) {
+            ticketService.onEvent(ticketId, EVT_COUNTING_CHANGED, callback);
+        }
+
+
+
+
         return {
-            addCounting: function (target) {
-                var ticketItem = ticketService.addTicket({
-                    target:target,
+            /**
+             *
+             * @param options={
+             *   target:
+             *
+             *
+             * }
+             * @returns {*|exports.guid|_ticketItem.guid|Compiler.guid|c.guid|d.guid}
+             */
+            create: function (options) {
+                var opts =  angular.extend({
                     category:category,
                     type:type,
                     current:0
-                });
+                },options);
 
-                return ticketItem.guid;
+                var ticketItem = ticketService.addTicket(opts);
+
+                var counterTrackId = ticketItem.guid;
+
+
+                setChangedCallback(counterTrackId,opts.change);
+                setFinishCallback(counterTrackId, opts.finish);
+
+                return counterTrackId;
             },
             del: function (ticketId) {
-                try {
-                    ticketService.offEvent(ticketId, EVT_COUNTING_FINISHED);
-                    ticketService.offEvent(ticketId, EVT_COUNTING_CHANGED);
-                    ticketService.delTicket(ticketId);
-                } catch (error) {
 
-                }
+                ticketService.offEvent(ticketId, EVT_COUNTING_FINISHED);
+                ticketService.offEvent(ticketId, EVT_COUNTING_CHANGED);
+                ticketService.delTicket(ticketId);
+
             },
             accumulate: function (ticketId) {
                 var ticket = ticketService.getTicket(ticketId);
                 ticket.current++;
                 ticketService.emitEvent(ticketId, EVT_COUNTING_CHANGED, ticket);
-                if (ticket.current == ticket.target) {
+                if (ticket.current == ticket.goal) {
                     ticketService.emitEvent(ticketId, EVT_COUNTING_FINISHED, ticket);
                 }
             },
@@ -302,12 +368,8 @@ Starter_Service
                 ticket.current--;
                 ticketService.emitEvent(ticketId, EVT_COUNTING_CHANGED, ticket);
             },
-            setFinishCallback: function (ticketId, callback) {
-                ticketService.onEvent(ticketId, EVT_COUNTING_FINISHED, callback);
-            },
-            setChangedCallback: function (ticketId, callback) {
-                ticketService.onEvent(ticketId, EVT_COUNTING_CHANGED, callback);
-            },
+            setFinishCallback:setFinishCallback,
+            setChangedCallback: setChangedCallback,
             getCurrentCount: function (ticketId) {
                 var ticket = ticketService.getTicket(ticketId);
                 return ticket.current;
