@@ -99,6 +99,13 @@ Starter_Service
             }, function (error) {
                 alert(error);
             });
+        $cordovaNativeAudio
+            .preloadSimple('finish', 'audio/finished.mp3')
+            .then(function (msg) {
+                console.log(msg);
+            }, function (error) {
+                alert(error);
+            });
 
 
         return {
@@ -107,6 +114,9 @@ Starter_Service
             },
             start: function () {
                 $cordovaNativeAudio.play('go');
+            },
+            finish:function () {
+                $cordovaNativeAudio.play('finish');
             }
         }
     })
@@ -147,7 +157,9 @@ Starter_Service
             timestamp: 0
         }
 
-        var _trackers = [];
+        var _trackerId = null;
+
+
 
         var setCurrentXYZ = function (x, y, z, timestamp) {
             current = {
@@ -156,14 +168,14 @@ Starter_Service
                 z: z,
                 timestamp: timestamp
             }
-            console.log(current);
+
         }
 
         var refreshWatching = function () {
             console.log("x:" + current.x + "  y:" + current.y + "  z:" + current.z);
-            for (var i = 0; i < _trackers.length; i++) {
-                var tracker = abstractTrackingService.getTrackingItem(_trackers[i]);
-                if (tracker.enabled != undefined && tracker.enabled != null && tracker.enabled) {
+
+                var tracker = abstractTrackingService.getTrackingItem(_trackerId);
+                if ( tracker.enabled) {
                     var x = current.x;
                     var y = current.y;
                     var z = current.z;
@@ -174,6 +186,7 @@ Starter_Service
                     var taskCallback = tracker.taskCallback;
                     var step = tracker.step;
                     var done = true;
+
                     for (var k = 0; k < touchstone.length; k++) {
                         if (!eval(touchstone[step])) {
                             done = false;
@@ -196,14 +209,14 @@ Starter_Service
 
                     }
                 }
-            }
+
         }
 
-        /**
-         * 寮€濮嬫娴?
-         */
+
         var startWatching = function () {
+
             try {
+                clearWatch();
                 watchId = $cordovaDeviceOrientation.watchHeading({frequency: 200}).then(null, function (error) {
 
                 }, function (result) {
@@ -219,29 +232,21 @@ Starter_Service
             }
             isSensorStarted = true;
         };
+
+        var clearWatch= function(){
+            if (watchId != null){
+                $cordovaDeviceOrientation.clearWatch(watchId);
+            }
+
+        }
         /**
          * 鍋滄妫€娴?
          */
         var stopWatching = function () {
-            if (watchId != null){
-                $cordovaDeviceOrientation.clearWatch(watchId);
-            }
+            console.log("stopWatching");
+            clearWatch();
             isSensorStarted = false;
         }
-
-
-
-
-
-
-
-        var setTask = function (trackerId, touchstone, enabled,counterTrackId) {
-
-
-        }
-
-
-
 
         return {
             /**
@@ -259,7 +264,7 @@ Starter_Service
                     type:type,
                     enabled:false
                 });
-                _trackers.push(tracker.guid);
+                _trackerId = tracker.guid;
 
                 if (isSensorStarted == false) {
                     startWatching();
@@ -287,17 +292,18 @@ Starter_Service
             },
             del: function (trackerId) {
                 abstractTrackingService.delTrackingItem(trackerId);
-                _trackers = removeElement(trackerId, _trackers);
-                if (_trackers.length <= 0) {
-                    stopWatching();
-                }
+
+
+
+                stopWatching();
+
                 return true;
             }
 
         }
     })
 
-    .factory('countingService', function (ticketService) {
+    .factory('countingService', function (ticketService,SoundService) {
         var category = "counting";
         var type = "basic_counting";
 
@@ -307,6 +313,7 @@ Starter_Service
          * @param callback
          */
         var setFinishCallback= function (ticketId, callback) {
+            SoundService.finish();
             ticketService.onEvent(ticketId, EVT_COUNTING_FINISHED, callback);
         }
         /**
@@ -350,6 +357,7 @@ Starter_Service
             },
             del: function (ticketId) {
 
+                console.log("停止计数："+ticketId);
                 ticketService.offEvent(ticketId, EVT_COUNTING_FINISHED);
                 ticketService.offEvent(ticketId, EVT_COUNTING_CHANGED);
                 ticketService.delTicket(ticketId);
@@ -360,6 +368,7 @@ Starter_Service
                 ticket.current++;
                 ticketService.emitEvent(ticketId, EVT_COUNTING_CHANGED, ticket);
                 if (ticket.current == ticket.goal) {
+
                     ticketService.emitEvent(ticketId, EVT_COUNTING_FINISHED, ticket);
                 }
             },

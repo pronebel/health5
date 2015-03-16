@@ -5,10 +5,6 @@ Starter_Service.factory('PushUp',['orientationTrackingService','countingService'
         var trackIds = [];
         var counterTrackIds = {};
 
-
-
-
-
         /**
          * 基数设置
           *
@@ -32,9 +28,6 @@ Starter_Service.factory('PushUp',['orientationTrackingService','countingService'
             orientationTrackingService.del(trackId);
             countingService.del(counterTrackIds[trackId]);
         }
-
-
-
 
         /**
          * 初始化一个pushup-tracking
