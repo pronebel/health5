@@ -3,7 +3,23 @@ Starter_Service
 /**
  *
  */
-    .factory('ticketService', function ($rootScope) {
+    .factory('ticketService', function ($rootScope,$cordovaVibration) {
+
+
+
+
+        var _vibrate = {
+            vibrateNotice:function (duration) {
+                $cordovaVibration.vibrate(duration || 100);
+            }
+        }
+
+
+
+
+
+
+
         var tickets = {};
         /**
          * guid
@@ -36,12 +52,17 @@ Starter_Service
                     return tickets[ticketId];
                 }
             },
-            addTicket: function () {
+            addTicket: function (ticketOption) {
                 var guid = generateGuid();
-                tickets[guid] = {};
-                //$event.$emit(EVT_ADD_TICKET);
+                var _ticketItem = {
+                    guid:guid
+                };
+
+                tickets[guid]  =angular.extend(_ticketItem,ticketOption);
+
                 $rootScope.$emit(EVT_ADD_TICKET);
-                return guid;
+
+                return  tickets[guid] ;
             },
             delTicket: function (ticketId) {
                 delete tickets[ticketId];
@@ -61,11 +82,9 @@ Starter_Service
         }
     })
 
+    .factory('SoundService', function ($cordovaNativeAudio) {
 
-
-    .factory('SoundService',function($cordovaNativeAudio){
-
-        /*$cordovaNativeAudio
+        $cordovaNativeAudio
             .preloadSimple('getOne', 'audio/di.mp3')
             .then(function (msg) {
                 console.log(msg);
@@ -81,14 +100,13 @@ Starter_Service
                 alert(error);
             });
 
-*/
 
         return {
-            tip:function(){
-              //  $cordovaNativeAudio.play('getOne');
+            tip: function () {
+                $cordovaNativeAudio.play('getOne');
             },
-            start:function(){
-              //  $cordovaNativeAudio.play('go');
+            start: function () {
+                $cordovaNativeAudio.play('go');
             }
         }
     })
@@ -99,11 +117,14 @@ Starter_Service
     .factory('abstractTrackingService', function (ticketService) {
         var category = 'tracking';
         return {
-            addTrackingItem: function () {
-                var ticketId = ticketService.addTicket();
-                var ticket = ticketService.getTicket(ticketId)
-                ticket['category'] = category;
-                return ticketId;
+            addTrackingItem: function (options) {
+                options = angular.extend({
+                    category:category
+                },options)
+
+                return ticketService.addTicket(options);
+
+
             },
             delTrackingItem: function (trackingId) {
                 ticketService.delTicket(trackingId);
@@ -114,26 +135,39 @@ Starter_Service
         }
     })
 
-    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService,SoundService, $cordovaDeviceOrientation) {
+    .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, SoundService, $cordovaDeviceOrientation) {
         var type = 'orientation';
-        var currentTrackerCounter = 0;
         var isSensorStarted = false;
         var watchId = null;
-        var currentX = 0;
-        var currentY = 0;
-        var currentZ = 0;
-        var timestamp = 0;
-        var trackers = [];
+
+        var current = {
+            x: 0,
+            y: 0,
+            z: 0,
+            timestamp: 0
+        }
+
+        var _trackers = [];
+
+        var setCurrentXYZ = function (x, y, z, timestamp) {
+            current = {
+                x: x,
+                y: y,
+                z: z,
+                timestamp: timestamp
+            }
+            console.log(current);
+        }
 
         var refreshWatching = function () {
-            console.log("x:"+currentX+"  y:"+currentY+"  z:"+currentZ);
-            for (var i = 0; i < trackers.length; i++) {
-                var tracker = abstractTrackingService.getTrackingItem(trackers[i]);
+            console.log("x:" + current.x + "  y:" + current.y + "  z:" + current.z);
+            for (var i = 0; i < _trackers.length; i++) {
+                var tracker = abstractTrackingService.getTrackingItem(_trackers[i]);
                 if (tracker.enabled != undefined && tracker.enabled != null && tracker.enabled) {
-                    var x = currentX;
-                    var y = currentY;
-                    var z = currentZ;
-                    var timestamp = timestamp;
+                    var x = current.x;
+                    var y = current.y;
+                    var z = current.z;
+                    var timestamp = current.timestamp;
                     //getTask
                     var targets = tracker.targets;
                     var stepCallback = tracker.stepCallback;
@@ -165,17 +199,18 @@ Starter_Service
             }
         }
 
+        /**
+         * 寮€濮嬫娴?
+         */
         var startWatching = function () {
             try {
                 watchId = $cordovaDeviceOrientation.watchHeading({frequency: 200}).then(null, function (error) {
+
                 }, function (result) {
-                    console.log("检测结果：===========================");
-					console.log(result);
-                    currentX = result.trueHeading;
-                    currentY = result.y;
-                    currentZ = result.z;
-                    timestamp = result.timestamp;
+
+                    setCurrentXYZ(result.trueHeading, result.y, result.z, result.timestamp);
                     refreshWatching();
+
                 }, function (err) {
 
                 });
@@ -184,29 +219,34 @@ Starter_Service
             }
             isSensorStarted = true;
         };
+        /**
+         * 鍋滄妫€娴?
+         */
         var stopWatching = function () {
-            if (watchId != null)
+            if (watchId != null){
                 $cordovaDeviceOrientation.clearWatch(watchId);
+            }
             isSensorStarted = false;
         }
 
         return {
             add: function () {
 
-                var trackerId = abstractTrackingService.addTrackingItem();
-                var tracker = abstractTrackingService.getTrackingItem(trackerId);
-                tracker['type'] = type;
-                tracker['enabled'] = false;
-                trackers.push(trackerId);
+                var tracker = abstractTrackingService.addTrackingItem({
+                    type:type,
+                    enabled:false
+                });
+                _trackers.push(tracker.guid);
+
                 if (isSensorStarted == false) {
                     startWatching();
                 }
-                return trackerId;
+                return tracker.guid;
             },
             del: function (trackerId) {
                 abstractTrackingService.delTrackingItem(trackerId);
-                trackers = removeElement(trackerId, trackers);
-                if (trackers.length <= 0) {
+                _trackers = removeElement(trackerId, _trackers);
+                if (_trackers.length <= 0) {
                     stopWatching();
                 }
                 return true;
@@ -224,27 +264,21 @@ Starter_Service
             }
         }
     })
-    .factory('vibrationNotificationService', function ($cordovaVibration) {
-        var actionNoticeLength = 100;
-        return {
-            vibrateNotice: function () {
-                $cordovaVibration.vibrate(actionNoticeLength);
-            }
-        }
-    })
+
     .factory('countingService', function (ticketService) {
         var targetTicket = null;
         var category = "counting";
         var type = "basic_counting";
         return {
             addCounting: function (target) {
-                var ticketId = ticketService.addTicket();
-                var ticket = ticketService.getTicket(ticketId);
-                ticket['target'] = target;
-                ticket['category'] = category;
-                ticket['type'] = type;
-                ticket['current'] = 0;
-                return ticketId;
+                var ticketItem = ticketService.addTicket({
+                    target:target,
+                    category:category,
+                    type:type,
+                    current:0
+                });
+
+                return ticketItem.guid;
             },
             del: function (ticketId) {
                 try {
@@ -280,17 +314,5 @@ Starter_Service
             }
         }
     })
-    .factory('countdownService', function (ticketService) {
-        var category = 'countdown';
-        var type = 'basic_countdown';
-        return {
-            addCountdown: function (target, startTime) {
-                var ticketId = ticketService.addTicket();
-                var ticket = ticketService.getTicket(ticketId);
-                if (startTime == 0) {
-                    startTime = Math.round(new Date().getTime() / 1000);
-                }
-            }
 
-        }
-    });
+;

@@ -1,5 +1,5 @@
-Starter_Service.factory('PushUp',['orientationTrackingService','vibrationNotificationService','countingService','SoundService',
-    function(orientationTrackingService,vibrationNotificationService,countingService,soundService){
+Starter_Service.factory('PushUp',['orientationTrackingService','countingService','SoundService',
+    function(orientationTrackingService,countingService,soundService){
 
 
         var trackIds = [];
