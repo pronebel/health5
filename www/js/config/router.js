@@ -15,7 +15,7 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
 
         backButton: {
             icon: 'ion-chevron-left',
-            text: 'Go Back',
+            text: '返回',
             previousTitleText: false
         },
 
@@ -115,11 +115,23 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
         .state('gym', {
             url: '/gym',
             templateUrl: 'js/controllers/measure/list.html',
-            controller: 'PushCtrl'
+            controller: 'GymCtrl'
 
         })
 
+        .state('adjust', {
+            url: '/adjust',
+            templateUrl: 'js/controllers/measure/adjust.html',
+            controller: 'AdjustCtrl'
 
+        })
+
+        .state('workout', {
+            url: '/workout',
+            templateUrl: 'js/controllers/workout/smart.html',
+            controller: 'WorkoutCtrl'
+
+        })
 
 
 

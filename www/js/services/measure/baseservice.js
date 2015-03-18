@@ -77,7 +77,7 @@ Starter_Service
                 $rootScope.$on(ticketId + "-" + type, callback);
             },
             offEvent: function (ticketId, type) {
-                $rootScope.$destroy(ticketId + "-" + type);
+               // $rootScope.$destroy(ticketId + "-" + type);
             }
         }
     })
@@ -144,6 +144,77 @@ Starter_Service
             }
         }
     })
+    .factory('adjustService', function ($rootScope,$timeout, SoundService, $cordovaDeviceOrientation) {//
+        var type = 'adjust';
+        var _watch = null;
+
+       var maxY = 0,minY = 0;
+
+       // var maxY = 5,minY = 5;
+
+
+
+
+
+
+        var watching = function () {
+            _watch = $cordovaDeviceOrientation.watchHeading({frequency: 100});
+
+            _watch.then(null, function (error) {
+
+            }, function (result) {
+
+
+                var y=   result.y ;
+                console.log(y);
+
+                if(maxY==0||minY==0){
+                    maxY = y;
+                    minY = y;
+                }else{
+                    maxY = Math.max(y,maxY);
+                    minY = Math.min(y,minY);
+                }
+                console.log(maxY+","+minY);
+
+
+            }, function (err) {
+
+            });
+        }
+
+
+        var testingEnd = function (finishedFunc) {
+            //2-20s后，滴的一声结束，给出最高最低值
+            $timeout(function () {
+                $cordovaDeviceOrientation.clearWatch(_watch.watchID);
+                finishedFunc(maxY,minY);
+                SoundService.tip();
+            }, 8000);
+
+
+        }
+
+
+        var testing = function (finishedFunc) {
+            //1-10s后滴的一声开始
+            $timeout(function () {
+                SoundService.tip();
+                watching();
+
+                testingEnd(finishedFunc);
+            }, 10000);
+
+
+        }
+
+
+        return {
+
+            testing: testing
+
+        }
+    })
 
     .factory('orientationTrackingService', function ($rootScope, abstractTrackingService, SoundService,countingService, $cordovaDeviceOrientation) {
         var type = 'orientation';
@@ -176,14 +247,10 @@ Starter_Service
 
                 var tracker = abstractTrackingService.getTrackingItem(_trackerId);
                 if ( tracker.enabled) {
-                    var x = current.x;
-                    var y = current.y;
-                    var z = current.z;
-                    var timestamp = current.timestamp;
-                    //getTask
+
                     var touchstone = tracker.touchstone;
-                    var stepCallback = tracker.stepCallback;
-                    var taskCallback = tracker.taskCallback;
+
+                    var  y = current.y;
                     var step = tracker.step;
                     var done = true;
 
@@ -194,14 +261,16 @@ Starter_Service
                         }
                     }
                     if (done) {
-                        tracker['x'] = x;
-                        tracker['y'] = y;
-                        tracker['z'] = z;
-                        tracker['timestamp'] = timestamp;
-                        stepCallback(tracker);
+                        tracker['x'] = current.x;
+                        tracker['y'] = current.y;
+                        tracker['z'] = current.z;
+                        tracker['timestamp'] = current.timestamp;
+
+                        tracker.stepCallback(tracker);
                         step++;
+
                         if (step >= touchstone.length) {
-                            taskCallback(tracker);
+                            tracker.taskCallback(tracker);
                             step = 0;
 
                         }
@@ -220,7 +289,6 @@ Starter_Service
 
                  _watch = $cordovaDeviceOrientation.watchHeading({ frequency: 500 });
 
-                window.aaaa= _watch;
                 _watch.then(null, function (error) {
 
                 }, function (result) {
@@ -244,9 +312,7 @@ Starter_Service
             }
 
         }
-        /**
-         * 鍋滄妫€娴?
-         */
+
         var stopWatching = function () {
             console.log("stopWatching:");
             console.log(_watch);
