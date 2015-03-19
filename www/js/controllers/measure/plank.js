@@ -1,5 +1,5 @@
-Starter_Controller.controller("PlankCtrl", ['$scope', '$location', '$rootScope', 'PlankService',
-    function ($scope, $location, $rootScope, PlankService) {
+Starter_Controller.controller("PlankCtrl", ['$scope', '$location', '$rootScope', 'PlankService','$timeout',
+    function ($scope, $location, $rootScope, PlankService,$timeout) {
 
         $scope.timerRunning = false;
 
@@ -52,7 +52,11 @@ Starter_Controller.controller("PlankCtrl", ['$scope', '$location', '$rootScope',
                 $scope.stop();
             } else {
                 $scope.state.sort = 1;
-                $scope.train();
+                $timeout(function () {
+                    $scope.train();
+                }, 5000);
+
+
             }
         };
 

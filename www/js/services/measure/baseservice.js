@@ -154,6 +154,7 @@ Starter_Service
         var basicX = 0,basicY = 0,basicZ = 0;
 
         var watching = function (finishedFunc) {
+            basicY =0;
             _watch = $cordovaDeviceOrientation.watchHeading({frequency: 100});
 
             _watch.then(null, function (error) {
@@ -162,7 +163,7 @@ Starter_Service
 
                 console.log( "============="+result.y);
 
-                if(basicY==0){
+                if(basicY==0){// 标准动作的检测，进入手臂的标准动作后，才开始计时。 ||basic|-90|> AbsYStop;
                     basicY =   result.y ;
 
                 }else{
@@ -191,11 +192,9 @@ Starter_Service
 
         var testing = function (finishedFunc) {
             //10s后滴的一声开始
-            $timeout(function () {
+
                 SoundService.tip();
                 watching(finishedFunc);
-
-            }, 10000);
 
 
         }
