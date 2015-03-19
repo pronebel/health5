@@ -112,6 +112,12 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
             controller: 'PushCtrl'
 
         })
+        .state('plank', {
+            url: '/plank',
+            templateUrl: 'js/controllers/measure/plank.html',
+            controller: 'PlankCtrl'
+
+        })
         .state('gym', {
             url: '/gym',
             templateUrl: 'js/controllers/measure/list.html',
