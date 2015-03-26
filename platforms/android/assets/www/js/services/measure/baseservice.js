@@ -4,13 +4,7 @@ Starter_Service
  *
  */
     .factory('ticketService', function ($rootScope) {
-
-
-
-
-
-
-
+        
 
 
         var tickets = {};

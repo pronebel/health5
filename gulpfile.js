@@ -7,6 +7,25 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 
+var ts = require('gulp-typescript');
+var merge = require('merge2');
+
+
+gulp.task('typescript', function() {
+    var tsResult = gulp.src('tps/*.ts')
+                       .pipe(ts({
+                           declarationFiles: true,
+                           noExternalResolve: true
+                       }));
+    
+    return merge([
+        tsResult.dts.pipe(gulp.dest('tps/dist')),
+        tsResult.js.pipe(gulp.dest('www/js/tps'))]
+    );
+});
+
+
+
 var paths = {
   sass: ['./scss/**/*.scss']
 };
