@@ -2,31 +2,11 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
     function ($scope, $location, $rootScope, pushup) {
 
         $scope.timerRunning = false;
-
-        $scope.startTimer = function (){
-
-            $scope.$broadcast('timer-start');
-            $scope.timerRunning = true;
-
-        };
-
-        $scope.stopTimer = function (){
-            $scope.$broadcast('timer-stop');
-            $scope.timerRunning = false;
-        };
-
-        $scope.$on('timer-stopped', function (event, data){
-            console.log('Timer Stopped - data = ', data);
-        });
-
-
-
         $scope.trakerId = null;
 
 
         $scope.state={
             count:0,
-
             sort:0
         }
 
@@ -37,13 +17,16 @@ Starter_Controller.controller("PushCtrl", ['$scope', '$location', '$rootScope', 
         $scope.stop = function(){
             console.log("finished");
             $scope.state.sort = 0;
-            $scope.stopTimer();
+            $scope.$broadcast('timer-stop');
+            $scope.timerRunning = false;
             pushup.stop($scope.trackId);
 
         }
 
         $scope.train=function(){
-            $scope.startTimer();
+            $scope.$broadcast('timer-start');
+            $scope.timerRunning = true;
+
             var trackId = pushup.start({
                 goal: 12,
                 change: function (event,args) {

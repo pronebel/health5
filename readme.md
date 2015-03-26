@@ -10,6 +10,8 @@ cordova plugin add org.apache.cordova.splashscreen
 cordova plugin add org.apache.cordova.vibration
 cordova plugin add https://github.com/SidneyS/cordova-plugin-nativeaudio.git  
 
+cordova plugin add org.awokenwell.proximity
+
 
 - ionic build andrid
 

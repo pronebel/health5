@@ -15,6 +15,7 @@
     "shelljs": "latest"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.device-motion"
+    "org.apache.cordova.device-motion",
+    "org.awokenwell.proximity"
   ]
 }
