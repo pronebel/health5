@@ -24,7 +24,18 @@
     <favorites_list name="health5" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="111.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers/111.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3658228" vertical-offset="0" max-vertical-offset="790">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -32,72 +43,63 @@
     </FindUsagesManager>
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/lib/angular/package.json" />
-        <option value="$PROJECT_DIR$/www/js/services/services.js" />
-        <option value="$PROJECT_DIR$/www/js/router.js" />
-        <option value="$PROJECT_DIR$/platforms/android/project.properties" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/www/lib/ionic/scss/_platform.scss" />
-        <option value="$PROJECT_DIR$/www/templates/tabs.html" />
-        <option value="$PROJECT_DIR$/readme.md" />
-        <option value="$PROJECT_DIR$/www/js/controllers/controllers.js" />
-        <option value="$PROJECT_DIR$/www/templates/tab-chats.html" />
-        <option value="$PROJECT_DIR$/platforms/android/ant-gen/com/ionicframework/health5911447/R.java" />
-        <option value="$PROJECT_DIR$/platforms/android/src/com/ionicframework/health5911447/MainActivity.java" />
-        <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/platforms/android/CordovaLib/src/org/apache/cordova/CordovaWebView.java" />
-        <option value="$PROJECT_DIR$/platforms/android/src/org/apache/cordova/deviceorientation/CompassListener.java" />
-        <option value="$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/src/android/CompassListener.java" />
-        <option value="$PROJECT_DIR$/www/js/services/measure/itemservice.js" />
-        <option value="$PROJECT_DIR$/www/templates/measure/pushup.html" />
+        <option value="$PROJECT_DIR$/www/js/services/measure/StepService.js" />
+        <option value="$PROJECT_DIR$/plugins/nebel.health.step/www/StepListener.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/measure/list.js" />
-        <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
-        <option value="$PROJECT_DIR$/scss/style.scss" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/list.html" />
-        <option value="$PROJECT_DIR$/www/lib/angular-timer.js" />
-        <option value="$PROJECT_DIR$/node_modules/weinre/lib/cli.js" />
-        <option value="$PROJECT_DIR$/www/js/config/config.js" />
-        <option value="$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/www/compass.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/pushup.html" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/adjust.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/adjust.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/pushup.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/templates/tab-dash.html" />
-        <option value="$PROJECT_DIR$/www/js/services/measure/PushupService.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/workout/smart.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/workout/workingModel.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/workout/smart.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/plank.html" />
-        <option value="$PROJECT_DIR$/www/js/services/measure/baseservice.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/measure/plank.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/measure/list.html" />
         <option value="$PROJECT_DIR$/www/js/config/router.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ-1054262.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/lib/biz/dist/biz.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/lib/biz/dist/biz-1054262.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/module/overview/dist/overview-1054262.js" />
-        <option value="D:/WWW/ums/branches/dev/client/dist/module/overview/dist/overview.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/measure/step.html" />
+        <option value="$PROJECT_DIR$/plugins/nebel.health.step/src/android/StepListener.java" />
+        <option value="$PROJECT_DIR$/platforms/android/src/nebel/health/step/StepListener.java" />
+        <option value="$PROJECT_DIR$/www/js/controllers/measure/step.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/111.ts" />
       </list>
     </option>
   </component>
+  <component name="JsBowerSettings">
+    <exe-path>C:\Users\nebel\AppData\Roaming\npm\bower.cmd</exe-path>
+    <config-path>D:\Develop\project\health5\bower.json</config-path>
+  </component>
   <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
     <gulpfiles>
       <GulpfileState>
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
       </GulpfileState>
     </gulpfiles>
-    <initial>false</initial>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1688" />
-    <option name="height" value="1014" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1692" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -157,142 +159,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="measure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="measure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="health5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -301,10 +167,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
-    <property name="last_opened_file_path" value="D:/WWW/ums/expressroot/login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript 1.5" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -321,28 +192,41 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -362,29 +246,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1688" height="1014" extended-state="0" />
+    <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34195724" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0859375" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23529412" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2629988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28715083" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3903262" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -402,6 +286,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -410,445 +297,363 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/app/js/timer.js">
+    <entry file="file://$USER_HOME$/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5570" max-vertical-offset="6280">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16980">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/dist/angular-timer.js">
+    <entry file="file://$USER_HOME$/WWW/ums/branches/dev/client/dist/lib/biz/dist/biz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="7480">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24200">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/examples/angularjs-add-countdown-seconds.html">
+    <entry file="file://$USER_HOME$/WWW/ums/branches/dev/client/dist/module/overview/dist/overview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.538462" vertical-offset="0" max-vertical-offset="680">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.18484288" vertical-offset="0" max-vertical-offset="541">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/examples/angularjs-multiple-timers.html">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.splashscreen/src/blackberry10/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.961538" vertical-offset="203" max-vertical-offset="960">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/examples/angularjs-polling-timer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41860464" vertical-offset="120" max-vertical-offset="1360">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/examples/angularjs-reset-timer">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.24946696" vertical-offset="577" max-vertical-offset="1960">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer/examples/angularjs-single-timer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90293455" vertical-offset="120" max-vertical-offset="940">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="309">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.bowerrc">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.splashscreen/src/wp/SplashScreen.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="309">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3460">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/lodash.js">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.splashscreen/src/android/SplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="232100">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3660" max-vertical-offset="5740">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/src/android/NativeAudioAssetComplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3560">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/config/config.js">
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/src/android/NativeAudioAsset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+        <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="2120">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="557">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/com.ionic.keyboard/src/android/IonicKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/src/com/ionic/keyboard/IonicKeyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.39800996" vertical-offset="240" max-vertical-offset="2040">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="1420">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/www/nativeaudio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20987654" vertical-offset="350" max-vertical-offset="1280">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js">
+    <entry file="file://$PROJECT_DIR$/plugins/de.neofonie.cordova.plugin.nativeaudio/src/android/NativeAudio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="256732" max-vertical-offset="259660">
-          <caret line="12864" column="5" selection-start-line="12864" selection-start-column="5" selection-end-line="12864" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="0.49811795" vertical-offset="3723" max-vertical-offset="6440">
+          <caret line="206" column="8" selection-start-line="206" selection-start-column="8" selection-end-line="206" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/www/CompassHeading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1005024" max-vertical-offset="1082400">
-          <caret line="50282" column="35" selection-start-line="50282" selection-start-column="35" selection-end-line="50282" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.63183475" vertical-offset="0" max-vertical-offset="823">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/cordova/lib/exec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8644" max-vertical-offset="158200">
-          <caret line="443" column="7" selection-start-line="443" selection-start-column="3" selection-end-line="443" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="940">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-timer.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/platform_www/cordova.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.0534124" vertical-offset="0" max-vertical-offset="7660">
-          <caret line="204" column="28" selection-start-line="204" selection-start-column="20" selection-end-line="204" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="7530" max-vertical-offset="39680">
+          <caret line="391" column="9" selection-start-line="391" selection-start-column="9" selection-end-line="391" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/services/services.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/.project">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6406685" vertical-offset="300" max-vertical-offset="2040">
-          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular/angular.js">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device/src/android/Device.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8545994" vertical-offset="286204" max-vertical-offset="522720">
-          <caret line="14339" column="36" selection-start-line="14339" selection-start-column="36" selection-end-line="14339" selection-end-column="36" />
+        <state vertical-scroll-proportion="47.692307" vertical-offset="1680" max-vertical-offset="3340">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/www/compass.js">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device/www/device.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1800">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="877" max-vertical-offset="1700">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/src/android/CompassListener.java">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/www/CompassError.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.67742" vertical-offset="4140" max-vertical-offset="6320">
-          <caret line="222" column="32" selection-start-line="222" selection-start-column="32" selection-end-line="222" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="800">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.757576" vertical-offset="66" max-vertical-offset="740">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/xml/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="920">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="79" selection-end-line="37" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.898928" vertical-offset="1860" max-vertical-offset="3480">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/src/de/neofonie/cordova/plugin/nativeaudio/NativeAudio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="6440">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/custom_rules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="767">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10344828" vertical-offset="1140" max-vertical-offset="3660">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="27824" max-vertical-offset="119960">
-          <caret line="1408" column="0" selection-start-line="1408" selection-start-column="0" selection-end-line="1408" selection-end-column="27" />
+        <state vertical-scroll-proportion="-15.233334" vertical-offset="1923" max-vertical-offset="8075">
+          <caret line="1396" column="6" selection-start-line="1396" selection-start-column="6" selection-end-line="1396" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/angular-local-storage.js">
+    <entry file="file://$PROJECT_DIR$/plugins/nebel.health.step/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8120">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.603022" vertical-offset="37" max-vertical-offset="765">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/js/services/measure/StepService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="740">
-          <caret line="8" column="94" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
+        <state vertical-scroll-proportion="0.5728022" vertical-offset="824" max-vertical-offset="1717">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="75" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/list.js">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/src/android/CompassListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1309" max-vertical-offset="5372">
+          <caret line="107" column="45" selection-start-line="107" selection-start-column="45" selection-end-line="107" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/chat-detail.html">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-orientation/www/compass.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/friend-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-chats.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="679">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53475934" vertical-offset="0" max-vertical-offset="748">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/adjust.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.615385" vertical-offset="0" max-vertical-offset="540">
-          <caret line="19" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1280">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.076923" vertical-offset="328" max-vertical-offset="1300">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/tab-dash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.461538" vertical-offset="0" max-vertical-offset="740">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="802" max-vertical-offset="1530">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/measure/PushupService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1720">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/workout/smart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="580">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/workout/pushupModel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="580">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/workout/smart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1520">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/workout/plankModel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/pushup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.307693" vertical-offset="0" max-vertical-offset="620">
-          <caret line="16" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/pushup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1460">
-          <caret line="20" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/adjust.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services/measure/baseservice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2580647" vertical-offset="2726" max-vertical-offset="10620">
-          <caret line="146" column="26" selection-start-line="146" selection-start-column="14" selection-end-line="146" selection-end-column="26" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5630" max-vertical-offset="9010">
+          <caret line="357" column="0" selection-start-line="357" selection-start-column="0" selection-end-line="357" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/plank.html">
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-motion/www/Acceleration.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/org.apache.cordova.device-motion/www/accelerometer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0357144" vertical-offset="1941" max-vertical-offset="2975">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/pushup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="527">
+          <caret line="23" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/plank.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1280">
-          <caret line="0" column="40" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.79447323" vertical-offset="458" max-vertical-offset="1156">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40308747" vertical-offset="394" max-vertical-offset="1139">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37907377" vertical-offset="0" max-vertical-offset="583">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/config/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1986" max-vertical-offset="3240">
-          <caret line="102" column="52" selection-start-line="102" selection-start-column="52" selection-end-line="102" selection-end-column="52" />
-          <folding />
+        <state vertical-scroll-proportion="0.72085387" vertical-offset="1975" max-vertical-offset="2856">
+          <caret line="142" column="48" selection-start-line="142" selection-start-column="48" selection-end-line="142" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ.js">
+    <entry file="file://$PROJECT_DIR$/plugins/nebel.health.step/www/StepListener.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="180">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.5303777" vertical-offset="0" max-vertical-offset="609">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ-1054262.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/src/nebel/health/step/StepListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29574862" vertical-offset="0" max-vertical-offset="16960">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.7536946" vertical-offset="306" max-vertical-offset="3689">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/module/customerServ/dist/customerServ.js">
+    <entry file="file://$PROJECT_DIR$/plugins/nebel.health.step/src/android/StepListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="16980">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1426750252884" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-0.7236615" vertical-offset="980" max-vertical-offset="3689">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/lib/biz/dist/biz.js">
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24200">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <marker date="1426750574778" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426750574778" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.064638786" vertical-offset="0" max-vertical-offset="789">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/lib/biz/dist/biz-1054262.js">
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/pushup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5" max-vertical-offset="24200">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <marker date="1426750709113" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426750709113" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.6032953" vertical-offset="306" max-vertical-offset="1241">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/WWW/ums/branches/dev/client/dist/module/overview/dist/overview.js">
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/step.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18484288" vertical-offset="0" max-vertical-offset="541">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.5124509" vertical-offset="0" max-vertical-offset="763">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/step.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20278834" vertical-offset="197" max-vertical-offset="1904">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/adjust.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="789">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/measure/adjust.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47401774" vertical-offset="0" max-vertical-offset="789">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/111.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3658228" vertical-offset="0" max-vertical-offset="790">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

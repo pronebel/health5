@@ -138,6 +138,12 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
             controller: 'WorkoutCtrl'
 
         })
+        .state('step', {
+            url: '/step',
+            templateUrl: 'js/controllers/measure/step.html',
+            controller: 'StepCtrl'
+
+        })
 
 
 

@@ -14,5 +14,7 @@
     "gulp-util": "latest",
     "shelljs": "latest"
   },
-  "cordovaPlugins": []
+  "cordovaPlugins": [
+    "org.apache.cordova.device-motion"
+  ]
 }

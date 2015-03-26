@@ -56,6 +56,27 @@ module.exports = [
         "clobbers": [
             "window.plugins.NativeAudio"
         ]
+    },
+    {
+        "file": "plugins/nebel.health.step/www/StepListener.js",
+        "id": "nebel.health.step.StepListener",
+        "clobbers": [
+            "window.plugins.StepListener"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
+        "id": "org.apache.cordova.device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
+        "id": "org.apache.cordova.device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -67,7 +88,9 @@ module.exports.metadata =
     "org.apache.cordova.device-orientation": "0.3.11",
     "org.apache.cordova.splashscreen": "1.0.0",
     "org.apache.cordova.vibration": "0.3.13",
-    "de.neofonie.cordova.plugin.nativeaudio": "3.0.2"
+    "de.neofonie.cordova.plugin.nativeaudio": "3.0.2",
+    "nebel.health.step": "3.0.2",
+    "org.apache.cordova.device-motion": "0.2.11"
 }
 // BOTTOM OF METADATA
 });
