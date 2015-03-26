@@ -7604,13 +7604,17 @@ a.button {
     padding: 10px; }
   .index-pane .green {
     margin: 0 1px;
+    height: 70px;
     background: #92CF68; }
   .index-pane .blue {
     margin: 0 1px;
+    height: 70px;
     background: #58B5E1; }
   .index-pane .red {
     margin: 0 1px;
+    height: 70px;
     background: #FA6567; }
   .index-pane .orange {
     margin: 0 1px;
+    height: 70px;
     background: #F7774A; }
