@@ -110,8 +110,13 @@ Starter.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider)
             url: '/pushup',
             templateUrl: 'js/controllers/measure/pushup.html',
             controller: 'PushCtrl'
-
         })
+         .state('pushup2', {
+             url: '/pushup2',
+             templateUrl: 'js/controllers/measure/pushup2.html',
+             controller: 'Push2Ctrl'
+
+         })
         .state('plank', {
             url: '/plank',
             templateUrl: 'js/controllers/measure/plank.html',
