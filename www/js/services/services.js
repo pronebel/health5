@@ -52,7 +52,8 @@ Starter_Service.factory('Chats', function() {
 /**
  * A simple example service that returns some data.
  */
-.factory('Friends', function() {
+.factory('Friends', function () {
+
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
